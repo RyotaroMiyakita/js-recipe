@@ -40,18 +40,18 @@
 // }
 // FizzBuzz(100)
 
-const loveThree = function(number){
-    for(n=1; n<=number; n++){
-        const num = String(n)
-        // console.log(num.indexOf("3"))
-        if(num.indexOf("3") != -1){
-            console.log(n + "!!!!!!!")
-        }
-        if(n % 3 === 0){
-            console.log(n + "!!!!!!!")
-        }
-        
-        
-    }
-}
-loveThree(100)
+// const loveThree = function(number){
+//     for(n=1; n<=number; n++){
+//         const num = String(n)
+//         // console.log(num.indexOf("3"))
+//         if(num.indexOf("3") != -1){
+//             console.log(n + "!!!!!!!")
+//         }else if(n % 3 === 0){
+//             console.log(n + "!!!!!!!")
+//         }else{
+//             console.log(n)
+//         }
+
+//     }
+// }
+// loveThree(100)
