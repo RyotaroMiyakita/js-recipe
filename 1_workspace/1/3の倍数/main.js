@@ -55,3 +55,22 @@
 //     }
 // }
 // loveThree(100)
+
+const button = document.getElementById("button")
+
+let count = 0
+const countUp = function() {
+  count += 1
+  if (count % 3 == 0) {
+    console.log(count + "!!!!!!!")
+  } else {
+    console.log(count)
+  }
+}
+// console.log(count)
+
+// setInterval(countUp, 1000)
+
+button.onclick = function() {
+  setInterval(countUp, 1000)
+}
