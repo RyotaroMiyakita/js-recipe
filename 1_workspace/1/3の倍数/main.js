@@ -56,7 +56,8 @@
 // }
 // loveThree(100)
 
-const button = document.getElementById("button")
+const startButton = document.getElementById("start-button")
+const stopButton = document.getElementById("stop-button")
 
 let count = 0
 const countUp = function() {
@@ -71,6 +72,11 @@ const countUp = function() {
 
 // setInterval(countUp, 1000)
 
-button.onclick = function() {
-  setInterval(countUp, 1000)
+startButton.onclick = function() {
+  start = setInterval(countUp, 1000)
+  start
+}
+
+stopButton.onclick = function() {
+  clearInterval(start)
 }
