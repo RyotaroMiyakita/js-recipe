@@ -19,9 +19,11 @@
       <button id="button1">代々木公園</button>
       <button id="button2">葛西臨海公園</button>
       <button id="button3">お台場海浜公園</button>
-      <div id="feedback"></div>
+      <div id="feedback">ここに答えが表示されます</div>
       <p>Q2.僕の生まれはどこでしょうか？</p>
       <input type="text" id="input" />
+      <input type="button" id="input-bottun" value="確認する" />
+      <div id="feedback2">ここに答えが表示されます</div>
     </div>
     <script>
       const buttonOne = document.getElementById("button1")
@@ -29,6 +31,9 @@
       const buttonThree = document.getElementById("button3")
       const feedback = document.getElementById("feedback")
       const input = document.getElementById("input")
+      const value = input.value
+      const feedbackTwo = document.getElementById("feedback2")
+      const inputButton = document.getElementById("input-button")
       buttonOne.onclick = function() {
         feedback.textContent = "大正解！！！"
       }
