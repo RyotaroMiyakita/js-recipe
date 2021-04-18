@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>クイズアプリ！！</h2>
+    <img
+      src="https://image.hldy-cdn.com/c/w=1336,h=826,g=5,a=2,r=auto,f=webp:auto/holiday_article_images/7452/7452.jpg?1607298341"
+      alt=""
+      width="auto"
+      height="300px"
+    />
+    <div>
+      <p>Q1.上の画像はどこの公園でしょうか？</p>
+      <button id="button1">代々木公園</button>
+      <button id="button2">葛西臨海公園</button>
+      <button id="button3">お台場海浜公園</button>
+      <div id="feedback"></div>
+      <p>Q2.僕の生まれはどこでしょうか？</p>
+      <input type="text" id="input" />
+    </div>
+    <script>
+      const buttonOne = document.getElementById("button1")
+      const buttonTwo = document.getElementById("button2")
+      const buttonThree = document.getElementById("button3")
+      const feedback = document.getElementById("feedback")
+      const input = document.getElementById("input")
+      buttonOne.onclick = function() {
+        feedback.textContent = "大正解！！！"
+      }
+
+      buttonTwo.onclick = function() {
+        feedback.textContent = "ハズレ！！！"
+      }
+
+      buttonThree.onclick = function() {
+        feedback.textContent = "ハズレ！！！"
+      }
+    </script>
+  </body>
+</html>
