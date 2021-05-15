@@ -5,3 +5,6 @@ git add .
 git commit -m "コミット"
 git push origin master
 ```
+
+live server を立ち上げる
+localhost 5500
