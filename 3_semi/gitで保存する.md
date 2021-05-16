@@ -7,4 +7,4 @@ git push origin master
 ```
 
 live server を立ち上げる
-localhost 5500
+localhost 5501
